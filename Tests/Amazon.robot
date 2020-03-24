@@ -6,6 +6,9 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
+${BROWSER} =  chrome
+${START_URL} =  https://www.amazon.com
+${SEARCH_TERM} =  Ferrari 458
 
 *** Test Cases ***
 User must sign in to check out
