@@ -15,8 +15,7 @@ User must sign in to check out
     [Documentation]  This is some basic info about the test
     [Tags]  Smoke
     Given user searches for products
-    And user select product from search results
-    And user goes to all buying choices page
-    And user chooses the buying option
-    When user adds product to cart
+    When user select product from search results
+    And user goes to the product page
+    And user goes to cart page
     Then user begins checkout

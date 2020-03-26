@@ -15,16 +15,12 @@ user searches for products
 
 user select product from search results
     SearchResults.Click Product Link
+
+user goes to the product page
     Product.Verify Page Loaded
+    Product.Add product to cart
 
-user goes to all buying choices page
-    Product.Go to All Buying Options Page
-    Product.Verify Page Loaded (all buying option)
-
-user chooses the buying option
-    Product.Choose the Buying Options
-
-user adds product to cart
+user goes to cart page
     Cart.Verify Product Added
 
 user begins checkout
