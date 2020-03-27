@@ -7,4 +7,4 @@ Load
     Sleep  2s
 
 Verify Page Loaded
-    Wait Until Page Contains  Amazon.com, Inc. or its affiliates
+    Wait Until Page Contains  Discover Amazon

@@ -18,6 +18,8 @@ user select product from search results
 
 user goes to the product page
     Product.Verify Page Loaded
+
+user add product to cart
     Product.Add product to cart
 
 user goes to cart page
