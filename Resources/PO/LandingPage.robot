@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../Tests/Amazon.robot
 
 *** Keywords ***
 Load
