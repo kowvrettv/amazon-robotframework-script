@@ -7,6 +7,10 @@ Resource  ./PO/SearchResults.robot
 Resource  ./PO/Cart.robot
 
 *** Keywords ***
+user should be able to login
+    [Arguments]  ${Username}  ${Password}
+    SignIn.Login With Valid Credentials  ${Username}  ${Password}
+
 user searches for products
     LandingPage.Load
     LandingPage.Verify Page Loaded
