@@ -1,11 +1,11 @@
-# robot -d results --loglevel trace Tests/Amazon.robot
-
 *** Settings ***
 Documentation  This is some basic info about the whole suite
 Resource  ../Resources/AmazonApp.robot
 Resource  ../Resources/Common.robot
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
+
+# robot -d Results --loglevel trace Tests/Amazon.robot
 
 *** Variables ***
 ${BROWSER} =  chrome
