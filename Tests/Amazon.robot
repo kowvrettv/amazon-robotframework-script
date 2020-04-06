@@ -18,15 +18,6 @@ ${LOGIN_PASSWORD} =  robotPassword
 Should be able to login
     Given user should be able to login  ${LOGIN_EMAIL}  ${LOGIN_PASSWORD}
 
-Logged out user should be able to search the product
-    [Tags]  search
-    Given user searches for products
-
-Logged out user should be able to view the product page
-    [Tags]  select-product
-    When user searches for products
-    Then user select product from search results
-
 Logged out user should be asked to sign in to check out
     [Documentation]  This is some basic info about the test
     [Tags]  checkout
