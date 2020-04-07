@@ -2,11 +2,13 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${FIRST_RESULTS_ITEM} =  xpath=//*[@id="search"]/div[1]/div[2]/div/span[4]/div[1]/div[1]/div/span/div/div/div[2]/h2/a
+${FIRST_RESULTS_ITEM} =  //div[@data-cel-widget="search_result_0"]
+#                        //img[@data-image-index="0"]
 
 *** Keywords ***
 Verify Search Completed
     Wait Until Page Contains  results for "${SEARCH_TERM}"
 
 Click Product Link
-    Click Link  ${FIRST_RESULTS_ITEM}
+    wait until page contains element  ${FIRST_RESULTS_ITEM}
+    Click Element  ${FIRST_RESULTS_ITEM}
