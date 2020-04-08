@@ -2,9 +2,9 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${ADD_TO_CART} =  id:add-to-cart-button
+${ADD_TO_CART} =  //input[@value="Add to Cart"]
 ${ALL_BUYING_OPTIONS} =  id:buybox-see-all-buying-choices-announce
-${SUBMIT_ADD_TO_CART} =  id:a-autoid-2
+${SUBMIT_ADD_TO_CART} =  //input[@name="submit.addToCart"]
 
 *** Keywords ***
 Verify Page Loaded
