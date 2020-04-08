@@ -11,8 +11,8 @@ Verify Page Loaded
     Wait Until Page Contains  Back to results
 
 Add product to cart
-    ${add_to_cart_visibility} =  run keyword and return status  wait until page contains element  ${ADD_TO_CART}
-    run keyword if  ${add_to_cart_visibility}  click button  ${ADD_TO_CART}
+    ${add_to_cart_button_visibility} =  run keyword and return status  wait until page contains element  ${ADD_TO_CART}
+    run keyword if  ${add_to_cart_button_visibility}  click button  ${ADD_TO_CART}
     ...  ELSE  All buying options
 
 All buying options
