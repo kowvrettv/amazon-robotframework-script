@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${MAIN_HEADING} =  xpath=//h1
+${MAIN_HEADING} =  //h1[@class="a-spacing-small"]
 
 *** Keywords ***
 Login With Valid Credentials
@@ -23,5 +23,5 @@ Click "Sign In" Button
     Log  Clicking Submit Button
 
 Verify Page Loaded
-    Page Should Contain Element  ${MAIN_HEADING}
+    Wait Until Page Contains Element  ${MAIN_HEADING}
     Element Text Should Be  ${MAIN_HEADING}  Sign-In
